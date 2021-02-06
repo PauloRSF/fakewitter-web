@@ -15,14 +15,16 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "@/styles/*": [
-        "src/styles/*"
-      ]
+      "@shared/*": ["src/shared/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@assets/*": ["src/assets/*"],
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "es5",
+    "typeRoots": ["src/@types"]
   },
   "include": [
     "next-env.d.ts",
